@@ -14,19 +14,19 @@ spring:
         show_sql: true
         format_sql: true
         implicit_naming_strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
-  cloud:
-    stream:
-      kafka:
-        binder:
-          brokers: localhost:9092
-        streams:
-          binder:
-            configuration:
-              default:
-                key:
-                  serde: org.apache.kafka.common.serialization.Serdes$StringSerde
-                value:
-                  serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+  # cloud:
+  #   stream:
+  #     kafka:
+  #       binder:
+  #         brokers: localhost:9092
+  #       streams:
+  #         binder:
+  #           configuration:
+  #             default:
+  #               key:
+  #                 serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+  #               value:
+  #                 serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
         event-in:
           group: flight
